@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>from Eelke with <3</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400" rel="stylesheet">
   <link href="./normalize.css" rel="stylesheet">
@@ -12,12 +13,16 @@ body {
   /* font-family: 'Inconsolata', monospace; */
   font-family: 'Source Code Pro', monospace;
   color: #f8f8f2;
-  width: 600px;
-  max-width: 100%;
+  max-width: 600px;
   padding: 60px 15px;
   margin: auto;
   font-weight: 300;
-  transform: rotate(-1deg);
+}
+
+@media (min-width: 576px) {
+  body {
+    transform: rotate(-1deg);
+  }
 }
 
 a {
